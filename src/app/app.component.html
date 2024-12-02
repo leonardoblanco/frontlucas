@@ -1,0 +1,22 @@
+<!-- Header -->
+<app-header></app-header>
+
+<!-- Main container to hold sidebar and content -->
+<div class="flex flex-grow overflow-hidden h-[calc(100vh-4rem)]">
+  <!-- Sidebar Menu -->
+  <div class="group bg-blue-700 w-64 flex-shrink-0 flex flex-col">
+    <app-menu></app-menu>
+  </div>
+
+  <!-- Main Content and Footer -->
+  <div class="flex-1 flex flex-col">
+      <!-- Content Section -->
+      <main class="flex-1 p-6 overflow-y-auto">
+        <router-outlet></router-outlet>
+      </main>
+
+      <!-- Footer -->
+      <app-footer></app-footer>
+  </div>
+  
+</div>
